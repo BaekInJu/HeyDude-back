@@ -26,8 +26,6 @@ public class Guide {
     private String reservedToMember;
     private String reservedFromMember;
 
-
-
     @Column(columnDefinition = "TEXT")
     private String content;
 
