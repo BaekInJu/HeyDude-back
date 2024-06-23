@@ -33,6 +33,7 @@ public class GuideController {
         return guideService.getGuides();
     }
 
+
     @GetMapping("/getGuide/{id}")
     public Guide getGuide(@PathVariable Long id){
         System.out.println("id : "+id + "guide :  "+guideService.getGuide(id));
