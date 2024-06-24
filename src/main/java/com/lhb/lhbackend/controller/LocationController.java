@@ -24,7 +24,6 @@ public class LocationController {
         this.locationService = locationService;
     }
 
-
     @GetMapping("/posts/{postId}/locations")
     public ResponseEntity<List<Location>> getLocationsByPostId(@PathVariable("postId") Long postId) {
         List<Location> locations = locationService.getLocationsByPostId(postId);
