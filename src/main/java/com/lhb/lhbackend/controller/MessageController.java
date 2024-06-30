@@ -20,6 +20,7 @@ public class MessageController {
     public MessageController(MessageService messageService) {
         this.messageService = messageService;
     }
+
     @GetMapping("/getMessage/{email}")
     public List<Message> getMessage(@PathVariable String email) {
         return messageService.getMessage(email);
