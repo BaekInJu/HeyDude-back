@@ -25,6 +25,7 @@ public class MessageController {
     public List<Message> getMessage(@PathVariable String email) {
         return messageService.getMessage(email);
     }
+
     @PostMapping("/getMessageContent")
     public List<GetMessageContentDto> getMessageContent(@RequestBody GetMessageDto getMessageDto){
         return messageService.getMessageContent(getMessageDto);
