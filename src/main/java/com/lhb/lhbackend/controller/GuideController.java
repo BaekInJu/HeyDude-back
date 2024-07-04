@@ -28,7 +28,6 @@ public class GuideController {
         }
     }
 
-
     @GetMapping("/getGuides")
     public List<Guide> getGuides(){
         return guideService.getGuides();
