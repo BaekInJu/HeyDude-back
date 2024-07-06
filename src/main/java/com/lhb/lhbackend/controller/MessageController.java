@@ -21,6 +21,7 @@ public class MessageController {
         this.messageService = messageService;
     }
 
+
     @GetMapping("/getMessage/{email}")
     public List<Message> getMessage(@PathVariable String email) {
         return messageService.getMessage(email);
