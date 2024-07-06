@@ -50,6 +50,7 @@ public class MessageController {
     public Set<GetPostsDto> getPosts(@PathVariable String email) {
         return messageService.getPosts(email);
     }
+
     @GetMapping("/responseRes/{guideId}")
     public void responseRes(@PathVariable Long guideId) {
         messageService.responseRes(guideId);
